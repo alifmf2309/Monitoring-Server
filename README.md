@@ -21,3 +21,6 @@ CentOS 7.9 64bit
 4. 14 Oktober 2023 Instalasi PHP Versi 7.4
 5. 16 Oktober 2023 Instalasi FTP Server (Service pada CentOS dan software FileZilla pada Windows)
 
+## Gambaran
+Contoh gambaran dari final project nya adalah sebagai berikut :
+![servers_overview](https://github.com/alifmf2309/Monitoring-Server-menggunakan-PHP-Monitoring-Server/assets/117895406/67fadbe6-3e84-4a52-916d-b86889b50aea)
