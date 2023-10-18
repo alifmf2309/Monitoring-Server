@@ -21,4 +21,4 @@ CentOS 7.9
 4. 14 Oktober 2023 Instalasi PHP Versi 7.4
 5. 16 Oktober 2023 Instalasi FTP Server (Service pada CentOS dan software FileZilla pada Windows)
 
-## Gambaran Monitoring Server
+##Gambaran Monitoring Server
