@@ -4,7 +4,7 @@
 Tugas yang di buat pada final project kali ini adalah menginstall php monitoring server dengan php versi 7.4.
 
 ## OS Server
-CentOS 7.9
+CentOS 7.9 64bit
 
 ## Service Yang Digunakan
 1. SSH Server
