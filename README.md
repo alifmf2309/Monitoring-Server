@@ -15,6 +15,20 @@ Ini adalah contoh ketika memonitoring sebuah website yaitu google.com. Demikian 
 ## OS Server
 CentOS 7.9 64bit
 
+## Repository Yang Digunakan
+1. Local Repository (Insert DVD / CD CentOS-7-x86_64-DVD-2009.iso lalu di mount dan buat repository)
+2. Cloud Repository (Menggunakan wget (link package yang akan di install)
+3. Epel Repository (Extra Packages for Enterprise Linux. Di install servicenya dari repository online maupun offline)
+
+## Bahan dan Alat
+1. File ISO CentOS 7, dapat di download di http://isoredirect.centos.org/centos/7/isos/x86_64/
+2. FTP Server menggunakan FileZilla untuk memudahkan manajemen file.
+3. SSH Server untuk meremote server.
+4. PHP 7.4 / diatasnya.
+5. MySQL.
+6. MariaDB.
+7. PHP Server Monitor.
+
 ## Service Yang Digunakan
 1. SSH Server
 2. DHCP Server
@@ -31,6 +45,5 @@ CentOS 7.9 64bit
 5. 16 Oktober 2023 Instalasi FTP Server (Service pada CentOS dan software FileZilla pada Windows)
 6. 20 - 21 Oktober 2023 Instalasi PHP Server Monitor versi v3.6.0
 
-## 
-Contoh gambaran dari final project nya adalah sebagai berikut :
+## Contoh gambaran dari final project nya adalah sebagai berikut :
 ![servers_overview](https://github.com/alifmf2309/Monitoring-Server-menggunakan-PHP-Monitoring-Server/assets/117895406/67fadbe6-3e84-4a52-916d-b86889b50aea)
