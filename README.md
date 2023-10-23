@@ -45,5 +45,8 @@ CentOS 7.9 64bit
 5. 16 Oktober 2023 Instalasi FTP Server (Service pada CentOS dan software FileZilla pada Windows)
 6. 20 - 21 Oktober 2023 Instalasi PHP Server Monitor versi v3.6.0
 
-## Contoh gambaran dari final project nya adalah sebagai berikut :
-![servers_overview](https://github.com/alifmf2309/Monitoring-Server-menggunakan-PHP-Monitoring-Server/assets/117895406/67fadbe6-3e84-4a52-916d-b86889b50aea)
+## Panduan Instalasi
+<code>
+[root@localhost~]# yum install git
+[root@localhost~]# git clone https://github.com/phpservermon/phpservermon
+</code>
