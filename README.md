@@ -46,7 +46,7 @@ CentOS 7.9 64bit
 6. 20 - 21 Oktober 2023 Instalasi PHP Server Monitor versi v3.6.0
 
 ## Panduan Instalasi
-<code>
+```
 [root@localhost~]# yum install git
 [root@localhost~]# git clone https://github.com/phpservermon/phpservermon
-</code>
+```
