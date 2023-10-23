@@ -46,7 +46,14 @@ CentOS 7.9 64bit
 6. 20 - 21 Oktober 2023 Instalasi PHP Server Monitor versi v3.6.0
 
 ## Panduan Instalasi
+Git adalah sistem kontrol versi terdistribusi yang melacak perubahan dalam setiap set file komputer, biasanya digunakan untuk mengoordinasikan pekerjaan di antara programmer yang secara kolaboratif mengembangkan kode sumber selama pengembangan perangkat lunak. Repositori Git menawarkan banyak layanan, salah satunya GitHub.
 ```
 [root@localhost~]# yum install git
 [root@localhost~]# git clone https://github.com/phpservermon/phpservermon
+```
+
+Apabila sudah mendapatkan clone package PHP Server Monitor dari GitHub, masuk ke direktori <code>phpservermon</code> lalu install package <code>composer.phar</code>. Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
+```
+[root@localhost~]# yum install zip unzip
+[root@localhost~]# php composer.phar install
 ```
