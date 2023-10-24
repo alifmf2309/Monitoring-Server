@@ -51,14 +51,33 @@ Git adalah sistem kontrol versi terdistribusi yang melacak perubahan dalam setia
 
 **Install Git terlebih dahulu**
 ```
-[root@localhost~]# yum install git
-[root@localhost~]# git clone https://github.com/phpservermon/phpservermon
+[root@localhost ~]# yum install git
+[root@localhost ~]# git clone https://github.com/phpservermon/phpservermon
+[root@localhost ~]# cd phpservermon
+[root@localhost phpservermon]#
 ```
 
-Apabila sudah mendapatkan clone package PHP Server Monitor dari GitHub, masuk ke direktori <code>phpservermon</code> lalu install package <code>composer.phar</code>. Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
+Apabila sudah mendapatkan clone package PHP Server Monitor dari GitHub, masuk ke direktori <code>phpservermon</code> lalu install package <code>composer.phar</code>.
+
+**Dilanjut untuk install php composer.phar**
+```
+[root@localhost phpservermon]# php composer.phar install
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Package operations: 19 installs, 0 updates, 0 removals
+    Failed to download mnsami/composer-custom-directory-installer from dist: The zip extension and unzip command are both missing, skipping.
+Your command-line PHP is using multiple ini files. Run `php --ini` to show them.
+```
+
+
+Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
 
 **Install Zip Unzip**
 ```
-[root@localhost~]# yum install zip unzip
-[root@localhost~]# php composer.phar install
+[root@localhost phpservermon]# yum install zip unzip
+Installed:
+  unzip.x86_64 0:6.0-24.el7_9                                                    zip.x86_64 0:3.0-11.el7
+
+Complete!
+[root@localhost phpservermon]# php composer.phar install
 ```
