@@ -148,7 +148,7 @@ Complete!
 [root@localhost ~]# yum install -y vagrant_1.8.1_x86_64.rpm
 ```
 
-***Step 4 : Verifikasi Vagrant***
+***Step 5 : Verifikasi Vagrant***
 
 Dengan mengecek versi untuk memastikan Vargant sudah terinstall
 ```
