@@ -76,7 +76,7 @@ Your command-line PHP is using multiple ini files. Run `php --ini` to show them.
 
 Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
 
-**Install Zip Unzip**
+**Install Zip Unzip dilanjut untuk install php composer.phar**
 ```
 [root@localhost phpservermon]# yum install zip unzip
 Installed:
