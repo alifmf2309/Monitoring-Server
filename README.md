@@ -53,6 +53,13 @@ CentOS 7.9 64bit
 ## Panduan Instalasi ##
 Git adalah sistem kontrol versi terdistribusi yang melacak perubahan dalam setiap set file komputer, biasanya digunakan untuk mengoordinasikan pekerjaan di antara programmer yang secara kolaboratif mengembangkan kode sumber selama pengembangan perangkat lunak. Repositori Git menawarkan banyak layanan, salah satunya GitHub.
 
+**Update Package / Service yang Terinstall**
+Guna mengupdate packages maupun service yang dibutuhkan.
+```
+[root@localhost ~]# yum -y update
+Complete!
+```
+
 **Install Git terlebih dahulu**
 ```
 [root@localhost ~]# yum install git
@@ -88,4 +95,39 @@ Complete!
 .
 Generating autoload files
 [root@localhost phpservermon]#
+```
+**Install Vagrant**
+Vagrant adalah sebuah service sejenis docker. Vagrant sebagai tool open source untuk membangun seluruh environment development virtual. Vagrant adalah level di atas Docker dalam hal abstraksi (Abtraksi adalah proses atau perbuatan memisahkan sesuatu dari hal-hal yang tidak penting atau tidak relevan).
+
+***Step 1 : Install VirtualBox***
+Prasyaratnya adalah Anda perlu menginstal VirtualBox sebelum bekerja di Vagrant karena Vagrant menggunakan VirtualBox untuk menginstal virtual machine.
+```
+[root@localhost ~]# yum -y install gcc dkms make qt libgomp patch
+[root@localhost ~]# yum -y install kernel-headers kernel-devel binutils glibc-headers glibc-devel font-forge
+```
+
+***Step 2 : Tambahkan Repositori VirtualBox***
+Untuk menginstall VirtualBox dari repo VirtualBox.
+```
+[root@localhost ~]# cd /etc/yum.repo.d/
+[root@localhost yum.repo.d]# wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+```
+
+***Step 3 : Instal VirtualBox menggunakan perintah `yum`***
+Untuk menginstall VirtualBox dari repo VirtualBox.
+```
+[root@localhost ~]# yum install -y VirtualBox-5.1
+[root@localhost ~]# /sbin/rcvboxdrv setup
+```
+
+***Step 4 : Instal Vagrant***
+```
+[root@localhost ~]# wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.rpm
+[root@localhost ~]# yum localinstall vagrant_1.8.1_x86_64.rpm
+```
+
+***Step 4 : Verifikasi Vagrant***
+Dengan mengecek versi untuk memastikan Vargant sudah terinstall
+```
+[root@localhost ~]# vagrant -v
 ```
