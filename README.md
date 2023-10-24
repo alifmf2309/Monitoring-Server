@@ -60,6 +60,7 @@ Guna mengupdate packages maupun service yang dibutuhkan.
 Complete!
 ```
 
+
 **Install Git terlebih dahulu**
 ```
 [root@localhost ~]# yum install git
@@ -68,9 +69,10 @@ Complete!
 [root@localhost phpservermon]#
 ```
 
-Apabila sudah mendapatkan clone package PHP Server Monitor dari GitHub, masuk ke direktori <code>phpservermon</code> lalu install package <code>composer.phar</code>.
 
 **Dilanjut untuk install php composer.phar**
+
+Apabila sudah mendapatkan clone package PHP Server Monitor dari GitHub, masuk ke direktori <code>phpservermon</code> lalu install package <code>composer.phar</code>.
 ```
 [root@localhost phpservermon]# php composer.phar install
 Loading composer repositories with package information
@@ -82,6 +84,7 @@ Your command-line PHP is using multiple ini files. Run `php --ini` to show them.
 
 
 Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
+
 
 **Install Zip Unzip dilanjut untuk install php composer.phar**
 ```
@@ -96,38 +99,59 @@ Complete!
 Generating autoload files
 [root@localhost phpservermon]#
 ```
+
+
 **Install Vagrant**
+
 Vagrant adalah sebuah service sejenis docker. Vagrant sebagai tool open source untuk membangun seluruh environment development virtual. Vagrant adalah level di atas Docker dalam hal abstraksi (Abtraksi adalah proses atau perbuatan memisahkan sesuatu dari hal-hal yang tidak penting atau tidak relevan).
 
+
 ***Step 1 : Install VirtualBox***
+
 Prasyaratnya adalah Anda perlu menginstal VirtualBox sebelum bekerja di Vagrant karena Vagrant menggunakan VirtualBox untuk menginstal virtual machine.
 ```
 [root@localhost ~]# yum -y install gcc dkms make qt libgomp patch
 [root@localhost ~]# yum -y install kernel-headers kernel-devel binutils glibc-headers glibc-devel font-forge
 ```
 
+
 ***Step 2 : Tambahkan Repositori VirtualBox***
+
 Untuk menginstall VirtualBox dari repo VirtualBox.
 ```
 [root@localhost ~]# cd /etc/yum.repo.d/
 [root@localhost yum.repo.d]# wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 ```
 
+Buka dan edit file config repositori VirtualBox. Ganti baseurl dengan https://www.virtualbox.org/wiki/Linux_Downloads lalu write and exit.
+```
+[root@localhost ~]# cd /etc/yum.repo.d/
+[root@localhost yum.repo.d]# nano virtualbox.repo
+baseurl=https://www.virtualbox.org/wiki/Linux_Downloads
+```
+
+
 ***Step 3 : Instal VirtualBox menggunakan perintah `yum`***
+
 Untuk menginstall VirtualBox dari repo VirtualBox.
 ```
-[root@localhost ~]# yum install -y VirtualBox-5.1
-[root@localhost ~]# /sbin/rcvboxdrv setup
+[root@localhost ~]# wget https://download.virtualbox.org/virtualbox/7.0.12/VirtualBox-7.0-7.0.12_159484_el7-1.x86_64.rpm
+[root@localhost ~]# yum install -y VirtualBox-7.0-7.0.12_159484_el7-1.x86_64.rpm
+Installed:
+  VirtualBox-7.0.x86_64 0:7.0.12_159484_el7-1
+Complete!
 ```
 
 ***Step 4 : Instal Vagrant***
 ```
 [root@localhost ~]# wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.rpm
-[root@localhost ~]# yum localinstall vagrant_1.8.1_x86_64.rpm
+[root@localhost ~]# yum install -y vagrant_1.8.1_x86_64.rpm
 ```
 
 ***Step 4 : Verifikasi Vagrant***
+
 Dengan mengecek versi untuk memastikan Vargant sudah terinstall
 ```
 [root@localhost ~]# vagrant -v
+Vagrant 1.8.1
 ```
