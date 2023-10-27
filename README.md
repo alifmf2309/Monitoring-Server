@@ -53,12 +53,14 @@ CentOS 7.9 64bit
 ## Panduan Instalasi ##
 Git adalah sistem kontrol versi terdistribusi yang melacak perubahan dalam setiap set file komputer, biasanya digunakan untuk mengoordinasikan pekerjaan di antara programmer yang secara kolaboratif mengembangkan kode sumber selama pengembangan perangkat lunak. Repositori Git menawarkan banyak layanan, salah satunya GitHub.
 
+
 **Update Package / Service yang Terinstall**
 Guna mengupdate packages maupun service yang dibutuhkan.
 ```
 [root@localhost ~]# yum -y update
 Complete!
 ```
+
 
 
 **Install Git terlebih dahulu**
@@ -68,6 +70,7 @@ Complete!
 [root@localhost ~]# cd phpservermon
 [root@localhost phpservermon]#
 ```
+
 
 
 **Dilanjut untuk install php composer.phar**
@@ -86,6 +89,7 @@ Your command-line PHP is using multiple ini files. Run `php --ini` to show them.
 Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
 
 
+
 **Install Zip Unzip dilanjut untuk install php composer.phar**
 ```
 [root@localhost phpservermon]# yum install zip unzip
@@ -99,6 +103,7 @@ Complete!
 Generating autoload files
 [root@localhost phpservermon]#
 ```
+
 
 
 **Install Vagrant**
