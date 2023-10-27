@@ -54,26 +54,24 @@ CentOS 7.9 64bit
 Git adalah sistem kontrol versi terdistribusi yang melacak perubahan dalam setiap set file komputer, biasanya digunakan untuk mengoordinasikan pekerjaan di antara programmer yang secara kolaboratif mengembangkan kode sumber selama pengembangan perangkat lunak. Repositori Git menawarkan banyak layanan, salah satunya GitHub.
 
 
-**Update Package / Service yang Terinstall**
-Guna mengupdate packages maupun service yang dibutuhkan.
+- Update Package / Service yang Terinstall
+>Guna mengupdate packages maupun service yang dibutuhkan.
 ```
 [root@localhost ~]# yum -y update
 Complete!
 ```
+#
 
-
-
-**Install Git terlebih dahulu**
+- Install Git terlebih dahulu
 ```
 [root@localhost ~]# yum install git
 [root@localhost ~]# git clone https://github.com/phpservermon/phpservermon
 [root@localhost ~]# cd phpservermon
 [root@localhost phpservermon]#
 ```
+#
 
-
-
-**Dilanjut untuk install php composer.phar**
+- Dilanjut untuk install php composer.phar
 
 Apabila sudah mendapatkan clone package PHP Server Monitor dari GitHub, masuk ke direktori <code>phpservermon</code> lalu install package <code>composer.phar</code>.
 ```
@@ -86,11 +84,10 @@ Your command-line PHP is using multiple ini files. Run `php --ini` to show them.
 ```
 
 
-Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
+>Apabila terdapat error <code>Failed, The zip extension and unzip command are both missing</code>, install dahulu package zip unzip dengan command <code>yum install zip unzip</code>.
+#
 
-
-
-**Install Zip Unzip dilanjut untuk install php composer.phar**
+- Install Zip Unzip dilanjut untuk install php composer.phar
 ```
 [root@localhost phpservermon]# yum install zip unzip
 Installed:
@@ -103,12 +100,11 @@ Complete!
 Generating autoload files
 [root@localhost phpservermon]#
 ```
+#
 
+- Install Vagrant
 
-
-**Install Vagrant**
-
-Vagrant adalah sebuah service sejenis docker. Vagrant sebagai tool open source untuk membangun seluruh environment development virtual. Vagrant adalah level di atas Docker dalam hal abstraksi (Abtraksi adalah proses atau perbuatan memisahkan sesuatu dari hal-hal yang tidak penting atau tidak relevan).
+>Vagrant adalah sebuah service sejenis docker. Vagrant sebagai tool open source untuk membangun seluruh environment development virtual. Vagrant adalah level di atas Docker dalam hal abstraksi (Abtraksi adalah proses atau perbuatan memisahkan sesuatu dari hal-hal yang tidak penting atau tidak relevan).
 
 
 ***Step 1 : Install VirtualBox***
