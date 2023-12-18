@@ -1,5 +1,7 @@
 # Monitoring Server #
 Tugas yang di buat pada final project kali ini adalah menginstall php monitoring server dengan php versi 7.4.
+![alifmf _-20231206-00012](https://github.com/alifmf2309/Monitoring-Server/assets/117895406/31ba06dd-cc9b-4252-970d-b837b4180d4f)
+
 ***
 
 ## Apa Itu PHP Monitoring Server? ##
